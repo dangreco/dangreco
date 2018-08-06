@@ -1,0 +1,261 @@
+@font-face {
+    font-family: "AvanteBs";
+    src: url(./AvanteBsReg.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "AvanteBsB";
+    src: url(./AvanteBsBold.ttf) format("truetype");
+}
+
+* {
+    font-family: "AvanteBs", sans-serif;
+    color: #9c9c9c;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 22px;
+}
+
+p {
+    margin: 0;
+}
+
+html {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#Main {
+    height: 100vh;
+    padding: 0;
+}
+
+#ImageBackground {
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url("./me.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.Section {
+    width: calc(100vw - 120px);
+    padding: 60px;
+}
+
+.Section p {
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+.IntroSmall {
+    font-size: 32px;
+    color: #4a4a4a;
+}
+
+.IntroLarge {
+    font-size: 54px;
+    font-family: "AvanteBsB", sans-serif;
+    color: #4a4a4a;
+}
+
+.SectionTitle {
+    font-size: 48px;
+    margin-bottom: 30px;
+    font-family: "AvanteBsB", sans-serif;
+    color: #4a4a4a;
+}
+
+
+#Intro {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#IntroContainer {
+    width: auto;
+}
+
+.CardRow {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Card {
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    height: 250px;
+    border-radius: 25px;
+    margin: 30px;
+    -webkit-box-shadow: 0px 0px 60px 0px rgba(50, 50, 50, 0.25);
+    -moz-box-shadow:    0px 0px 60px 0px rgba(50, 50, 50, 0.25);
+    box-shadow:         0px 0px 60px 0px rgba(50, 50, 50, 0.25);
+    transition: all .15s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CardBanner {
+    color: #ffffff;
+    font-size: 18px;
+    width: 200px;
+    text-align: center;
+    line-height: 28px;
+    position: absolute;
+    z-index: 999;
+    top: 40px;
+    left: -40px;
+    transform: rotate(-45deg)
+}
+
+.Discontinued {
+    background-color: #f44336;
+}
+
+.Progress {
+
+    background-color: #2196F3;
+}
+
+.CircleCard {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin: 30px;
+    -webkit-box-shadow: 0px 0px 60px 0px rgba(50, 50, 50, 0.25);
+    -moz-box-shadow:    0px 0px 60px 0px rgba(50, 50, 50, 0.25);
+    box-shadow:         0px 0px 60px 0px rgba(50, 50, 50, 0.25);
+    transition: all .15s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CardContainer {
+    width: auto;
+}
+
+.Card:hover, .CircleCard:hover {
+    cursor: pointer;
+    transform: scale(1.025,1.025);
+    -webkit-box-shadow: 0px 0px 90px 0px rgba(50, 50, 50, 0.4);
+    -moz-box-shadow:    0px 0px 90px 0px rgba(50, 50, 50, 0.4);
+    box-shadow:         0px 0px 90px 0px rgba(50, 50, 50, 0.4);
+}
+
+.Company {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #4a4a4a;
+    font-size: 26px;
+}
+
+a {
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+a:active, a:hover, a:visited {
+    text-decoration: none;
+    outline: none;
+}
+
+.Date {
+    font-size: 18px;
+}
+
+.Tech {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Tech i {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+@media (max-width: 1250px) {
+    #ImageBackground {
+        z-index: -999999;
+        left: 0;
+        width: 100vw;
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("./me.png");
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #Intro {
+        width: calc(100vw - 120px);
+        padding-left: 60px;
+    }
+
+    .IntroSmall {
+        font-size: 32px;
+        color: #ffffff;
+    }
+    
+    .IntroLarge {
+        font-size: 54px;
+        font-family: "AvanteBsB", sans-serif;
+        color: #ffffff;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+  
+    .IntroLarge {
+        font-size: 12vw;
+    }
+
+    .IntroSmall {
+        font-size: 8vw;
+    }
+
+    .SectionTitle {
+        font-size: 8vw;
+    }
+
+    .Section p:not(.IntroLarge):not(.IntroSmall):not(.SectionTitle), strong {
+        font-size: 4vw;
+    }
+
+    .Section {
+        width: calc(100vw - 120px);
+    }
+
+    .Card {
+        width: calc(100vw - 120px);
+        height: calc((100vw - 120px) * 250 / 400)
+    }
+
+    .Card:hover, .CircleCard:hover {
+        transform: scale(1,1);
+        -webkit-box-shadow: 0px 0px 60px 0px rgba(50, 50, 50, 0.25);
+        -moz-box-shadow:    0px 0px 60px 0px rgba(50, 50, 50, 0.25);
+        box-shadow:         0px 0px 60px 0px rgba(50, 50, 50, 0.25);
+    }
+
+}
