@@ -14,6 +14,10 @@ and hardware design.
 
 ---
 
+<a href="https://www.linkedin.com/in/danrgreco/" style="color: inherit; text-decoration: none;">
+    <img align="left" src="/assets/icons/linkedin.png" width="48" height="48" alt="LinkedIn">
+</a>
+
 <a href="https://www.printables.com/@dangreco" style="color: inherit; text-decoration: none;">
-    <img src="/assets/icons/printables.png" width="48" height="48" alt="Printables">
+    <img align="left" src="/assets/icons/printables.png" width="48" height="48" alt="Printables">
 </a>
