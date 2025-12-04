@@ -1,0 +1,30 @@
+---
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+version: "3"
+
+includes:
+  yaml: ./tasks/yaml.yml
+  markdown: ./tasks/markdown.yml
+
+tasks:
+  default:
+    desc: List tasks
+    silent: true
+    cmds:
+      - task --list
+
+  check:
+    desc: Check for linting/formatting errors
+    silent: true
+    deps:
+      - yaml:check
+      - markdown:check
+    cmds: []
+
+  fix:
+    desc: Fix linting/formatting errors
+    silent: true
+    deps:
+      - yaml:fix
+      - markdown:fix
+    cmds: []

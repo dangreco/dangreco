@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+task check &> /dev/null
+task fix &> /dev/null

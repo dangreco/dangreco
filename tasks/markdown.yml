@@ -1,0 +1,16 @@
+---
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+version: "3"
+
+tasks:
+  check:
+    silent: true
+    desc: Check for linting/formatting errors
+    cmds:
+      - markdownlint .
+
+  fix:
+    desc: Fix linting/formatting errors
+    silent: true
+    cmds:
+      - markdownlint --fix .
