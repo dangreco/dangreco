@@ -15,5 +15,5 @@ and hardware design.
 ---
 
 <a href="https://www.printables.com/@dangreco" style="color: inherit; text-decoration: none;">
-    <img src="./assets/icons/printables-icon.svg" width="48" height="48" alt="Printables Icon">
+    <img src="https://raw.githubusercontent.com/dangreco/dangreco/refs/heads/main/assets/icons/printables.svg" width="48" height="48" alt="Printables">
 </a>
